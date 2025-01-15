@@ -1,0 +1,23 @@
+{
+  "name": "chain-rpc-tester",
+  "version": "1.0.0",
+  "description": "A functional programming based tool for testing blockchain RPC endpoints",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "jest",
+    "start": "node src/index.js"
+  },
+  "keywords": ["blockchain", "rpc", "testing", "functional-programming"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.6.7",
+    "ramda": "^0.29.1",
+    "winston": "^3.11.0"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "dotenv": "^16.4.1"
+  }
+}
