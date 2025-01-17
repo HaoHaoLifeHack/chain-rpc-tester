@@ -1,0 +1,18 @@
+export const ADDRESSES = {
+  // Contract addresses
+  CONTRACTS: {
+    TOKEN: '0xACAE80Abf79994e555dfa70f66cBF573b05b9e3a',    // Example Token Contract
+  },
+
+  // Account addresses
+  ACCOUNTS: {
+    TEST_ACCOUNT: '0x3470bF351B929F4D3dB2a397DE7Ca980A70Cfbb9',
+    HOLDER: '0x742d35Cc6634C0532925a3b844Bc454e4438f44e',
+  }
+};
+
+export const STORAGE = {
+  SLOTS: {
+    ZERO: '0x0000000000000000000000000000000000000000000000000000000000000000',
+  }
+};

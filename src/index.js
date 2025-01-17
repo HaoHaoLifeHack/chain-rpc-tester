@@ -1,21 +1,20 @@
-import { testBlockNumber } from './tests/rpcTests.js';
-import { logger } from './utils/logger.js';
+import { runAllTests } from './tests/rpcTests.js';
 import dotenv from 'dotenv';
 
 dotenv.config();
 
 const main = async () => {
-  const endpoint = process.env.GUDCHAIN_DEV;
+  const endpoint = process.env.ENDPOINT_URL;
   
   if (!endpoint) {
-    logger.error('No RPC endpoint provided in .env file');
+    console.error('No RPC endpoint provided in .env file');
     process.exit(1);
   }
 
   try {
-    await testBlockNumber(endpoint);
+    await runAllTests(endpoint);
   } catch (error) {
-    logger.error('Application error:', error);
+    console.error('Application error:', error);
     process.exit(1);
   }
 };
